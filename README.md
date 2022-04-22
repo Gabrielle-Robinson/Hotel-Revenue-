@@ -7,9 +7,11 @@ This project is about building a visual data story using power BI to present to 
 
 2. Analyzing and Retrieving Data with Mircosoft SQL server:  Once database is created, I created a new query and started to explore the data using SQL SELECT * FROM function. From there I used the UNION function to combined all the tables from 2018-2020 into one unified dataset and named it a new dataset called 'hotels'. To see if the hotel revenue is growing by year, I first created a new column named 'revenue' that sum((stays_in_week_nights + stays_in_weekend_nights) * adr {adr is the average daily rate}. Next I included in the SQL function SELECT arrival_date_year and used GROUP BY arrival_date_year to see the change of revenge each year. The total revenue in 2018 was about $4.5M, in 2019 it was about $20.4M, and in 2020 it was about $14.24M. Since stakeholders wanted to see the revenue broken down by hotel types, I used the SELECT arrival_date_year and hotel which was GROUP BY arrival_date_year and hotel. Now running this query it is shown that in this segment, revenue for City Hotel in 2018, 2019, and 2020 was $1.5M, $10.1M, and $8.4M respectfully. Revenue for Resort Hotel in 2018, 2019, and 2020 was $3.4M, $9.2M, and #6.8M respecfully. Next I combined the market_segment table to the market segment column in the 'hotels' table using the LEFT JOIN function. I also combined the meal_cost table to the meal cost column in the 'hotels' table using the LEFT JOIN function.
 
-3. Connecting Power BI to a Database
-5. Visualizing Data in Power BI
-6. Answering the following questions presented by stakeholders (Summarize findings): 
+3. Connecting Power BI to a Database: I retrieved the hotel data from SQL by opening Power BI and importing the data from the SQL server. To begin answering stakholder questions about revenue, I had to factor in the discounts given to clients. Calculating revenue was achieved by creating a new column called 'Revenue' that added stays_in_week_nights and stays_in_weekend_nights then multiplied by average daily rate then mutilpied by discount. 
+
+4. Visualizing Data in Power BI: I closed and applied the table in Power BI to start the visualization of data. First I designed three sections for my visualizations, the first section breaks down the total revenue ($29.85M), average ADR ($104.47), total nights that were spent (367.78K), average discount (25.8%), and the number of car spaces (8.69K) with respective trendlines. The second section displays reveune trends by reservation dates for City Hotel and Resort Hotel.Lastly the third section consist of a pie chart that discloses the revenue percentages for City Hotel and Resort Hotel. And a table for revenue my year and the parking spaces with 
+
+5. Answering the following questions presented by stakeholders (Summarize findings): 
    "Is our hotel revenue growing by year?" ->
    Since there are two hotel types, I dediced to segement revenue by hotel type
    
