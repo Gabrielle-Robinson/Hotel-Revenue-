@@ -1,13 +1,14 @@
 # Hotel-Revenue
 Develop a dashboard using Power BI to viualize hotel booking data
 # About the project 
-This project is about building a visual data story using power BI to present to stakeholders. In this progress I will be building a database, analyzing and retrieving data with SQL, connecting power BI to a database, visualizing data in Power BI, then answering questions presented by stakeholders.
+This project is about building a visual data story using power BI to present to stakeholders. Through this process, I will be building a database, analyzing and retrieving data with SQL, connecting power BI to a database, visualizing data in Power BI, then answering questions presented by stakeholders.
 
-1. Building a database
-2. Analyzing and Retrieving Data with Mircosoft SQL server
-3. Connecting Power BI to a Database
-4. Visualizing Data in Power BI
-5. Answering the following questions presented by stakeholders (Summarize findings): 
+1. Building a database: Initially I downloaded the data from excel workbook that logs hotel data of City Hotel and Resort hotel from 2018, 2019, 2020, and the market segment. Then I created a database in Mircosoft SQL server management studio and imported the excel table. Once database is created, I created a new query and started to explore the data using SQL. I developed a SQL query to combined all the tables into one unified dataset. 
+
+3. Analyzing and Retrieving Data with Mircosoft SQL server
+4. Connecting Power BI to a Database
+5. Visualizing Data in Power BI
+6. Answering the following questions presented by stakeholders (Summarize findings): 
    "Is our hotel revenue growing by year?" ->
    Since there are two hotel types, I dediced to segement revenue by hotel type
    
