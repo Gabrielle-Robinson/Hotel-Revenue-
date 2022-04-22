@@ -1,5 +1,5 @@
 # Hotel-Revenue
-Develop a dashboard using Power BI to viualize hotel booking data
+Develop a dashboard using Power BI to visualize hotel booking data and to explore seasonality
 # About the project 
 This project is about building a visual data story using power BI to present to stakeholders. Through this process, I will be building a database, analyzing and retrieving data with SQL, connecting power BI to a database, visualizing data in Power BI, then answering questions presented by stakeholders.
 
@@ -9,16 +9,16 @@ This project is about building a visual data story using power BI to present to 
 
 3. Connecting Power BI to a Database: I retrieved the hotel data from SQL by opening Power BI and importing the data from the SQL server. To begin answering stakholder questions about revenue, I had to factor in the discounts given to clients. Calculating revenue was achieved by creating a new column called 'Revenue' that added stays_in_week_nights and stays_in_weekend_nights then multiplied by average daily rate then mutilpied by discount. 
 
-4. Visualizing Data in Power BI: I closed and applied the table in Power BI to start the visualization of data. First I designed three sections for my visualizations, the first section breaks down the total revenue ($29.85M), average ADR ($104.47), total nights that were spent (367.78K), average discount (25.8%), and the number of car spaces (8.69K) with respective trendlines. The second section displays reveune trends by reservation dates for City Hotel and Resort Hotel.Lastly the third section consist of a pie chart that discloses the revenue percentages for City Hotel and Resort Hotel. And a table for revenue my year and the parking spaces with 
+4. Visualizing Data in Power BI: I closed and applied the table in Power BI to start the visualization of data. First I designed three sections for my visualizations. The first section breaks down the total revenue ($29.85M), average ADR ($104.47), total nights that were spent (367.78K), average discount (25.8%), and the number of car spaces (8.69K) with respective trendlines. The second section displays reveune trends by reservation dates for City Hotel and Resort Hotel.Lastly the third section consist of a pie chart that discloses the revenue percentages for City Hotel and Resort Hotel. And a table for revenue by year, number of parking spaces, and the percent of parking space used. Lastly, I designed a filter by country, date, hotel type, and time.
 
-5. Answering the following questions presented by stakeholders (Summarize findings): 
+5. Summarized findings: 
    "Is our hotel revenue growing by year?" ->
    Since there are two hotel types, I dediced to segement revenue by hotel type
    
-   "Should we increase our parking lot size?" ->                                                    I want to see if there is a trend with guest and personal cars over the years
+   "Should we increase our parking lot size?" ->                                                   With the stagant trend with guest and personal cars over the years, there is no outstanding evidence that proves to increase the parking lot size.
    
-   "What trends an we see in the data?" ->
-   I focused on average daily rate and guests to explore seasonality 
+   "What trends an we see in the data?" -> Over the three years there has been a positive correlation and trend for average ADR, total nights spents, and car spaces. The average discount has aslso increased during the time. 
+
    
 # Download Data
 To download data, copy this repo using git clone https://github.com/Gabrielle-Robinson/Hotel-Revenue-, open the file 'hotel_revenue_historical_full.xlsx', click 'View Raw' and open downloaded file.
